@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-12-1.jpg);
+    background-position: center;
+}
+
+.tittle{
+    margin-top: 20vh;
+    color: #FFF;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: -1px 4px black;
+    text-transform: uppercase;
+}
+
+.info-container{
+    color:#000;
+    border: 1px solid white;
+    background: #eee;
+    margin: 10vh;
+    padding: 2vh;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 0px 4px rgba(0,0,0,.3);
+}
+
+.input{
+    padding-top: 50px;
+}
+
+#sw_subm{
+    padding: 2vh 20vh;
+    background: rgb(65, 65, 65);
+    color: white;
+    border: none;
+    font-size: 25px;
+}
