@@ -39,4 +39,7 @@ body{
     color: white;
     border: none;
     font-size: 25px;
+    max-width: 100%;
+    margin: 10px;
+    text-align: center;
 }
