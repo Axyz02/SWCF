@@ -34,7 +34,7 @@ body{
 }
 
 #sw_subm{
-    padding: 2vh 20vh;
+    padding: 1vh 10vh;
     background: rgb(65, 65, 65);
     color: white;
     border: none;
@@ -42,4 +42,10 @@ body{
     max-width: 100%;
     margin: 10px;
     text-align: center;
+}
+
+#sw_search{
+    text-align: center;
+    width: 35vh;
+    height: 5vh;
 }
