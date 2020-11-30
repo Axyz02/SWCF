@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>SWCF</title>
-    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css" />
+  <title>SWCF</title>
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
 
-    <h1 class="tittle">Star Wars character finder</h1>
-    
-    <div class="info-container">
-      <h2 id="name"></h2>
-      <p id="bYear"></p>
-      <p id="height"></p>
-      <p id="weight"></p>
-      <p id="homeworld"></p>
-      <p id="gender"></p>
-      <p id="hColor"></p>
-      <div class="input">
-        <input name="searchSW" type="text" id="sw_search" value="" />
-        <div></div>
-        <button type="submit" value="Enviar" id="sw_subm">Search</button>
-      </div>
+<body>
+
+  <h1 class="tittle">Star Wars character finder</h1>
+
+  <div class="info-container">
+    <h2 id="name"></h2>
+    <p id="bYear"></p>
+    <p id="height"></p>
+    <p id="weight"></p>
+    <p id="homeworld"></p>
+    <p id="gender"></p>
+    <p id="hColor"></p>
+    <p id="homeworld"></p>
+    <div class="input">
+      <input name="searchSW" type="text" id="sw_search" value="" />
+      <div></div>
+      <button type="submit" value="Enviar" id="sw_subm">Search</button>
     </div>
+  </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
-      integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js" charset="utf-8"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+    integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+    crossorigin="anonymous"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
 </html>
