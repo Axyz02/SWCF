@@ -91,7 +91,7 @@ function updateInfoWithError() {
 
 
 function loadingIcon() {
-  name.innerHTML = `<i class="fas fa-spinner"></i>`;
+  name.innerHTML = `<div class="loader"></div>`;
   bYear.innerText = ``;
   height.innerText = ``;
   weight.innerText = ``;
