@@ -32,7 +32,7 @@ function getPj() {
   }
 
   else {
-    axios.get(apiUrl + search.value)
+    axios.get(apiUrl+'?search=' + search.value)
       .then(response => {
         if (response.data.count === 0) {
           alert("That name doesn't match any character")
