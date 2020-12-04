@@ -25,7 +25,7 @@ function getPj() {
   // * Fetching the API with Axios (Ajax)
   if (search.value === '') {
     axios
-      .get('https://swapi.dev/api/people/' + randomNum)
+      .get(apiUrl + randomNum)
       .then(response => {
         updateInfo(response.data);
         getHomeworld(response.data.homeworld);
