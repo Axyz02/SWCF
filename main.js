@@ -14,15 +14,18 @@ const homeworld = document.getElementById("homeworld");
 // * Callback function for Event listener
 function getPj() {
 
-  loadingIcon();
+  
 
   // * In case of a void search input
   let randomNum = Math.floor((Math.random() * 88) + 1);
   const apiUrl = 'https://swapi.dev/api/people/';
+
+  loadingIcon();
+
   // * Fetching the API with Axios (Ajax)
   if (search.value === '') {
     axios
-      .get(apiUrl + randomNum)
+      .get('https://swapi.dev/api/people/' + randomNum)
       .then(response => {
         updateInfo(response.data);
         getHomeworld(response.data.homeworld);
