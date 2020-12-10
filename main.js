@@ -14,7 +14,7 @@ const homeworld = document.getElementById("homeworld");
 // * Callback function for Event listener
 function getPj() {
 
-  
+
 
   // * In case of a void search input
   let randomNum = Math.floor((Math.random() * 88) + 1);
@@ -27,24 +27,31 @@ function getPj() {
     axios
       .get(apiUrl + randomNum)
       .then(response => {
-        updateInfo(response.data);
         getHomeworld(response.data.homeworld);
+        setTimeout(() => {
+        updateInfo(response.data);
+        }, 300);
       }).catch(e => {
         updateInfoWithError();
       });
   }
 
   else {
-    axios.get(apiUrl+'?search=' + search.value)
+    axios.get(apiUrl + '?search=' + search.value)
       .then(response => {
         if (response.data.count === 0) {
-          alert("That name doesn't match any character")
+          alert("That name doesn't match any character").then(function () {
+            updateInfoWithError();
+          });
+
         } else {
-          updateInfo(response.data.results[0]);
           getHomeworld(response.data.results[0].homeworld);
+          setTimeout(() => {
+          updateInfo(response.data.results[0]);
+          }, 300);
         }
       }).catch(e => {
-         updateInfoWithError();
+        updateInfoWithError();
       });
   }
 
@@ -56,10 +63,6 @@ function getHomeworld(url) {
   let planetName;
   axios.get(url)
     .then(function (response) {
-      // console.log(response.data.name);
-      // planetName = response.data.name;
-      // console.log(planetName);
-      // return planetName;
       homeworld.innerText = `Homeworld: ${response.data.name}`;
     })
 };
@@ -89,7 +92,7 @@ function updateInfoWithError() {
   weight.innerText = ``;
   gender.innerText = ``;
   hColor.innerText = ``;
-  homeworld.innerText=``;
+  homeworld.innerText = ``;
 }
 
 
@@ -100,7 +103,7 @@ function loadingIcon() {
   weight.innerText = ``;
   gender.innerText = ``;
   hColor.innerText = ``;
-  homeworld.innerText=``;
+  homeworld.innerText = ``;
 }
 
 
